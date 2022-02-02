@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto EDO.</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;469;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    
+
+<header>
+    <div id="logo">
+        <img src="./img/ultimo_logo.png" alt="logo">
+    </div>
+    <nav id="botonera_principal">
+        <ul class="menu_nav_princ">
+            <li><a href="index.html" class="activo" >Home</a></li>
+            <li><a href="biografia.html" class="activo" >Biografía</a></li>
+            <li><a href="igle_ubi.html" class="activo">Iglesia</a></li>   
+            <li><a href="libros.html" class="activo" >Libros</a></li>
+            <li><a href="videos.html" class="activo" >Videos</a></li>
+            <li><a href="blogmedia.html" class="activo" >Blog</a></li>
+            <li><a href="contacto.html" class="activo" >Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+<section id="contenido_contacto">
+
+    <form method="POST" action="#">
+    <input type="text" id="nombre" class="datos" placeholder="Nombre" pattern="[a-zA-Z ]{2,70}" disabled><br/>
+    <input type="text" id="apellido" class="datos" placeholder="Apellido" pattern="[a-zA-Z ]{2,70}" disabled><br/>
+    <input type="email" id="correoElectronico" class="datos" placeholder="e-mail" disabled><br/>
+    <input type="text" id="asunto" class="datos" placeholder="Asunto" maxlength="10" disabled><br/>
+    <textarea id="mensaje" class="datos" placeholder="Mensaje" rows="4" cols="50" maxlength="250" disabled></textarea><br/>
+    <p class="center-content">
+        <input type="submit" class="bot bot-blue" value="Enviar Datos" disabled>
+    </p>
+</form>
+
+</section>
+<footer>
+    <div id="sigueme_txt"> <h2>Follow me</h2> </div>
+    <nav id="botonera_social_escr">
+        <ul>
+            <li><a href="https://www.facebook.com/eduardo.tatangelo" target="new" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#" class="instagram"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#" class="twitter"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/eduardo-tatangelo-097730134/?originalSubdomain=ar" target="new" class="linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a href="https://www.youtube.com/channel/UCT5tJ1XaPpB61CryShcp5IQ" target="new" class="youtube"><i class="fab fa-youtube"></i></a></li>
+        </ul>
+        </nav>
+    <div id="sigueme_txt_copy"><h3 id="copy">&copy; 2020 Ekel Leal</h3></div>
+
+</footer>
+<script src="javascript/validacion_form.js"></script>
+<script src="javascript/contacto_alert.js"></script>
+</body>
+</html>
